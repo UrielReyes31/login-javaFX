@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #28252e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InicioController">
+   <children>
+      <HBox layoutY="21.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #2E2EFE; -fx-border-width: 3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#LoginpaneShow" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #2E2EFE;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="41.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#Loginpane_up_Show" prefHeight="75.0" prefWidth="328.0" style="-fx-background-color: #00BFFF;" text="SignUp" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="41.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="panel_login" layoutY="200.0" prefHeight="246.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_username" layoutX="84.0" layoutY="14.0" prefHeight="40.0" prefWidth="450.0" promptText="Usuario" />
+            <PasswordField fx:id="txt_password" layoutX="84.0" layoutY="87.0" prefHeight="40.0" prefWidth="450.0" promptText="Contraseña" />
+            <Button fx:id="btn_login" layoutX="224.0" layoutY="148.0" mnemonicParsing="false" onAction="#Login" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: #2E2EFE;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panel_SignUp" layoutY="152.0" prefHeight="252.0" prefWidth="600.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_username_UP" layoutX="355.0" layoutY="30.0" prefHeight="30.0" prefWidth="200.0" promptText="Usuario" />
+            <TextField fx:id="txt_password_UP" layoutX="355.0" layoutY="81.0" prefHeight="30.0" prefWidth="200.0" promptText="Contraseña" />
+            <TextField fx:id="txt_Email" layoutX="355.0" layoutY="132.0" prefHeight="30.0" prefWidth="200.0" promptText="Email" />
+            <Button layoutX="11.0" layoutY="195.0" mnemonicParsing="false" onAction="#add_usuario" prefHeight="38.0" prefWidth="577.0" style="-fx-background-color: #2E2EFE;" text="SignUp" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="26.0" />
+               </font></Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@avatar_login_login.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

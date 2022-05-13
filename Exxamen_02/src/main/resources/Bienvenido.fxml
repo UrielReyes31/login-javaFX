@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BienvenidoController">
+   <children>
+      <Label layoutY="89.0" prefHeight="192.0" prefWidth="605.0" text="WELCOME " textFill="WHITE">
+         <font>
+            <Font name="Engravers MT" size="87.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
